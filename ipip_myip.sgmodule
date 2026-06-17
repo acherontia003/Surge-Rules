@@ -7,4 +7,4 @@
 hostname = %APPEND% myip.ipip.net
 
 [Script]
-ipip-myip-request = type=http-request,pattern=^https:\/\/myip\.ipip\.net\/?.*$,script-path=%script_url%,timeout=10,argument=policy=%policy%
+ipip-myip-request = type=http-request,pattern=^https?:\/\/myip\.ipip\.net\/?.*$,script-path=%script_url%,timeout=10,argument=policy=%policy%

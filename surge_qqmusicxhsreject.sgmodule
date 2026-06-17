@@ -1,0 +1,6 @@
+#!name=QQ Music P2P and RED Reject
+#!desc=Reject QQ Music P2P nodes and selected Xiaohongshu ad domains.
+#!category=Reject
+
+[Rule]
+RULE-SET,https://raw.githubusercontent.com/acherontia003/Surge-Rules/main/surge_qqmusicxhsreject.list,REJECT

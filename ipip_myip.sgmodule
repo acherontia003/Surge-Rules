@@ -1,10 +1,10 @@
-#!name=IPIP MyIP Panel
-#!desc=Show the exit IP and geo information returned by myip.ipip.net. The panel request uses the configured policy group.
+#!name=IPIP MyIP via Proxy
+#!desc=Intercept myip.ipip.net and return the result fetched through the configured policy group. Requires MITM for myip.ipip.net.
 #!category=Network
-#!arguments=policy=PROXY&script_url=https://raw.githubusercontent.com/acherontia003/Surge-Rules/main/ipip_myip.js
+#!arguments=policy=PROXY&script_url=https://raw.githubusercontent.com/acherontia003/Surge-Rules/main/ipip_myip_request.js
 
-[Panel]
-IPIP MyIP = title="IPIP MyIP",content="Tap refresh to query myip.ipip.net",style=info,script-name=ipip-myip-panel,update-interval=600
+[MITM]
+hostname = %APPEND% myip.ipip.net
 
 [Script]
-ipip-myip-panel = type=generic,script-path=%script_url%,timeout=10,argument=policy=%policy%
+ipip-myip-request = type=http-request,pattern=^https:\/\/myip\.ipip\.net\/?.*$,script-path=%script_url%,timeout=10,argument=policy=%policy%

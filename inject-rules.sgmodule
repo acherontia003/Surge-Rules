@@ -4,5 +4,8 @@
 
 [Rule]
 # Antigravity.app 走 Proxy
-DOMAIN,antigravity.app,Proxy
-DOMAIN-SUFFIX,antigravity.app,Proxy
+PROCESS-NAME,antigravity.app,Proxy
+# 常用特定网站走代理
+DOMAIN-SUFFIX,myip.ipip.net,Proxy
+DOMAIN-SUFFIX,fanbox.cc,Proxy
+DOMIAN-KEYWORD,kemono,Proxy

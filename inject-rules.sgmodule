@@ -1,6 +1,6 @@
 #!name=Rule Injector
 #!desc=将自定义规则注入到订阅中（通过模块优先级覆盖远程规则）
-#!category=Custom
+#!category=Injector
 
 [Rule]
 # Antigravity.app 走 Proxy

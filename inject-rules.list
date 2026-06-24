@@ -6,14 +6,16 @@
 #
 # Keep policy names out of this file. The module decides the target policy.
 
+# 特定APP走代理
 PROCESS-NAME,Antigravity
-# PROCESS-NAME,Codex
+PROCESS-NAME,Codex
 # PROCESS-NAME,Claude
 PROCESS-NAME,antigravity
-# PROCESS-NAME,codex
+PROCESS-NAME,codex
 # PROCESS-NAME,claude
 
-DOMAIN-SUFFIX,myip.ipip.net
+# 特定域名走代理
+# DOMAIN-SUFFIX,myip.ipip.net
 DOMAIN-SUFFIX,fanbox.cc
 DOMAIN-SUFFIX,pixiv.net
 DOMAIN-SUFFIX,pximg.net

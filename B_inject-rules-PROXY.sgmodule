@@ -7,6 +7,6 @@ PROCESS-NAME,Antigravity,PROXY
 PROCESS-NAME,antigravity,PROXY
 PROCESS-NAME,Codex,PROXY
 PROCESS-NAME,codex,PROXY
-PROCESS-NAME,Claude,PROXY
-PROCESS-NAME,claude,PROXY
+#PROCESS-NAME,Claude,PROXY
+#PROCESS-NAME,claude,PROXY
 RULE-SET,https://raw.githubusercontent.com/acherontia003/Surge-Rules/main/inject-rules.list,PROXY

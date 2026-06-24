@@ -3,9 +3,12 @@
 #!category=Injector
 
 [Rule]
-# Antigravity.app 走 Proxy
+# 特定app 走 Proxy
 PROCESS-NAME,antigravity.app,Proxy
+PROCESS-NAME,codex.app,Proxy
+PROCESS-NAME,claude.app,Proxy
 # 常用特定网站走代理
 DOMAIN-SUFFIX,myip.ipip.net,Proxy
 DOMAIN-SUFFIX,fanbox.cc,Proxy
+DOMAIN-SUFFIX,gamemale.com,Proxy
 DOMIAN-KEYWORD,kemono,Proxy

@@ -2,15 +2,15 @@
 #!desc=将自定义规则注入到订阅中（通过模块优先级覆盖远程规则）
 #!category=Injector
 [Proxy Group]
-InjectedProxy = select, Proxy, PROXY
+Proxy = select, PROXY
 
 [Rule]
-# 特定app 走 InjectedProxy
-PROCESS-NAME,antigravity,InjectedProxy
-PROCESS-NAME,codex,InjectedProxy
-PROCESS-NAME,claude,InjectedProxy
+# 特定app 走 Proxy
+PROCESS-NAME,antigravity,Proxy
+PROCESS-NAME,codex,Proxy
+PROCESS-NAME,claude,Proxy
 # 常用特定网站走代理
-DOMAIN-SUFFIX,myip.ipip.net,InjectedProxy
-DOMAIN-SUFFIX,fanbox.cc,InjectedProxy
-DOMAIN-SUFFIX,gamemale.com,InjectedProxy
-DOMAIN-KEYWORD,kemono,InjectedProxy
+DOMAIN-SUFFIX,myip.ipip.net,Proxy
+DOMAIN-SUFFIX,fanbox.cc,Proxy
+DOMAIN-SUFFIX,gamemale.com,Proxy
+DOMAIN-KEYWORD,kemono,Proxy

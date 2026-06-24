@@ -1,0 +1,21 @@
+# Rule Injector shared rules
+#
+# This file is consumed by:
+# - A_inject-rules-proxy.sgmodule -> Proxy
+# - B_inject-rules-PROXY.sgmodule -> PROXY
+#
+# Keep policy names out of this file. The module decides the target policy.
+
+PROCESS-NAME,Antigravity
+PROCESS-NAME,Codex
+PROCESS-NAME,Claude
+PROCESS-NAME,antigravity
+PROCESS-NAME,codex
+PROCESS-NAME,claude
+
+DOMAIN-SUFFIX,myip.ipip.net
+DOMAIN-SUFFIX,fanbox.cc
+DOMAIN-SUFFIX,pixiv.net
+DOMAIN-SUFFIX,pximg.net
+DOMAIN-SUFFIX,gamemale.com
+DOMAIN-KEYWORD,kemono

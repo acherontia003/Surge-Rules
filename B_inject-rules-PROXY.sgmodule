@@ -1,0 +1,6 @@
+#!name=Rule Injector - PROXY
+#!desc=将公共规则表注入到订阅中，目标策略组：PROXY
+#!category=Injector
+
+[Rule]
+RULE-SET,https://raw.githubusercontent.com/acherontia003/Surge-Rules/main/inject-rules.list,PROXY

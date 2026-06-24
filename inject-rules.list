@@ -7,10 +7,10 @@
 # Keep policy names out of this file. The module decides the target policy.
 
 PROCESS-NAME,Antigravity
-PROCESS-NAME,Codex
+# PROCESS-NAME,Codex
 PROCESS-NAME,Claude
 PROCESS-NAME,antigravity
-PROCESS-NAME,codex
+# PROCESS-NAME,codex
 PROCESS-NAME,claude
 
 DOMAIN-SUFFIX,myip.ipip.net

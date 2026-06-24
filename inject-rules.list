@@ -5,17 +5,9 @@
 # - B_inject-rules-PROXY.sgmodule -> PROXY
 #
 # Keep policy names out of this file. The module decides the target policy.
+# NOTE: PROCESS-NAME 不能放进外部 RULE-SET，会报错；进程规则放在各模块的 [Rule] 段。
 
-# 特定APP走代理
-PROCESS-NAME,Antigravity
-PROCESS-NAME,Codex
-# PROCESS-NAME,Claude
-PROCESS-NAME,antigravity
-PROCESS-NAME,codex
-# PROCESS-NAME,claude
-
-# 特定域名走代理
-# DOMAIN-SUFFIX,myip.ipip.net
+DOMAIN-SUFFIX,myip.ipip.net
 DOMAIN-SUFFIX,fanbox.cc
 DOMAIN-SUFFIX,pixiv.net
 DOMAIN-SUFFIX,pximg.net

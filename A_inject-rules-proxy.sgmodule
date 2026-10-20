@@ -4,6 +4,7 @@
 #!system=mac
 
 [Rule]
+PROCESS-NAME,/Applications/Muse.app/,Proxy
 PROCESS-NAME,/Applications/ChatGPT.app/,PROXY
 PROCESS-NAME,/Applications/UURemote.app/,DIRECT
 RULE-SET,https://raw.githubusercontent.com/acherontia003/Surge-Rules/main/inject-direct-rules.list,DIRECT,update-interval=172800

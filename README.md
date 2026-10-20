@@ -34,3 +34,20 @@ PROCESS-NAME,/Applications/UURemote.app/,DIRECT
 ```
 
 该写法同时覆盖 `UURemote`、`UURemoteService` 和 `UURemoteDaemon`。
+
+## Muse 整个 App 走代理（Surge Mac 6.10.0）
+
+A/B 模块分别包含以下规则，与各自主配置策略组的大小写一致：
+
+```ini
+# A：Proxy
+PROCESS-NAME,/Applications/Muse.app/,Proxy
+# B：PROXY
+PROCESS-NAME,/Applications/Muse.app/,PROXY
+```
+
+路径末尾的 `/` 使用 App Bundle 前缀匹配，覆盖 Muse 包内所有可执行程序；请将 Muse 安装在 `/Applications/Muse.app`。
+仅启用与主配置策略组匹配的一个模块，并将该组选择为代理节点。
+对不遵循系统代理的连接，还需要开启 Surge 增强模式；进程规则本身不负责接管流量。更新模块后，新连接才会按新规则匹配。
+
+规则格式参考：[Surge 官方 Process Rules](https://manual.nssurge.com/rules/process.html)。
